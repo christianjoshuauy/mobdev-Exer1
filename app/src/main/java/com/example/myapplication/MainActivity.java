@@ -37,17 +37,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        Intent intent;
         switch (v.getId()) {
             case R.id.btnExercise1:
                 Toast.makeText(MainActivity.this, "Exercise 1 is clicked!",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnActivity1:
                 Toast.makeText(MainActivity.this, "Activity 1 is clicked!",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this, MyActivity_1_Circle.class);
+                intent = new Intent(this, MyActivity_1_Circle.class);
                 startActivity(intent);
                 break;
             case R.id.btnActivity2:
                 Toast.makeText(MainActivity.this, "Activity 2 is clicked!",Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, MainActivity2_Menu.class);
+                startActivity(intent);
                 break;
             case R.id.btnActivity3:
                 Toast.makeText(MainActivity.this, "Activity 3 is clicked!",Toast.LENGTH_SHORT).show();
