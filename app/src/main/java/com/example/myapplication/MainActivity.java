@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnExercise1, btnActivity1, btnActivity2, btnActivity3;
+    Button btnExercise1, btnActivity1, btnActivity2, btnActivity3, btnSMS;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +21,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnActivity1 = (Button) findViewById(R.id.btnActivity1);
         btnActivity2 = (Button) findViewById(R.id.btnActivity2);
         btnActivity3 = (Button) findViewById(R.id.btnActivity3);
+        btnSMS = (Button) findViewById(R.id.btnSMS);
 
         btnExercise1.setOnClickListener(this);
         btnActivity1.setOnClickListener(this);
         btnActivity2.setOnClickListener(this);
         btnActivity3.setOnClickListener(this);
+        btnSMS.setOnClickListener(this);
 
 //        btnActivity1.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -54,6 +56,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnActivity3:
                 Toast.makeText(MainActivity.this, "Activity 3 is clicked!",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnSMS:
+                Toast.makeText(MainActivity.this, "SMS is clicked!",Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, Activity_SendSMSPage.class);
+                startActivity(intent);
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + v.getId());

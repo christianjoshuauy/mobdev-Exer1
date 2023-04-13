@@ -48,13 +48,13 @@
 
     <Button
         android:id="@+id/btnActivity2"
-        android:layout_width="225dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:background="@drawable/custombutton"
         android:text="@string/activity_2"
         android:textColor="#212121"
-        app:backgroundTint="@color/color3"
+        app:backgroundTint="@color/color4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,26 +62,23 @@
 
     <Button
         android:id="@+id/btnActivity3"
-        android:layout_width="300dp"
+        android:layout_width="225dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="130dp"
         android:background="@drawable/custombutton"
         android:text="@string/activity_3"
         android:textColor="#202020"
-        app:backgroundTint="@color/color2"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:backgroundTint="@color/color3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnActivity2"
-        app:layout_constraintVertical_bias="0.181"
         tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="213dp"
+        android:layout_height="190dp"
         android:contentDescription="@string/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -93,13 +90,27 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="What are you doing, Step Up!"
         android:textColor="#FFFFFF"
         android:textStyle="italic"
-        android:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/btnSMS"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custombutton"
+        android:text="@string/send_sms"
+        android:textColor="#202020"
+        app:backgroundTint="@color/color2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnActivity3" />
 
