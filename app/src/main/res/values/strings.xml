@@ -6,5 +6,6 @@
     <string name="activity_2">Activity 2</string>
     <string name="activity_3">Activity 3</string>
     <string name="send_sms">Send SMS</string>
+    <string name="google">OPEN GOOGLE MAP</string>
     <string name="logo">Logo</string>
 </resources>
